@@ -1,0 +1,31 @@
+import MultiPlatformLibrary
+import UIKit
+
+class {{moduleName}}Coordinator: BaseCoordinator {
+    private var factory: {{moduleName}}Factory {
+        return AppComponent.factory.{{moduleNameSmall}}Factory
+    }
+
+    private weak var viewModel: {{moduleName}}ViewModel?
+
+    override func start() {
+        let vc: {{moduleName}}ViewController = R.storyboard.{{moduleNameSmall}}.{{moduleNameSmall}}Controller()!
+
+        let viewModel = factory.create{{moduleName}}ViewModel(
+            eventsDispatcher: EventsDispatcher(listener: self)
+        )
+
+        self.viewModel = viewModel
+
+        vc.bindViewModel(viewModel)
+        vc.deinitCallback = { [weak self] in
+            self?.completionHandler?()
+        }
+        
+        navigationController?.pushViewController(vc, animated: true)
+    }
+}
+
+extension {{moduleName}}Coordinator: {{moduleName}}ViewModelEventsListener {
+
+}

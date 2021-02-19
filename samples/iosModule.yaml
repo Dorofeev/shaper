@@ -1,0 +1,14 @@
+globalParams:
+  moduleName: Services
+  moduleNameSmall: services
+  iosProjectModule: mokoApp
+
+files:
+  - pathTemplate: 'Coordinator/{{moduleName}}Coordinator.swift'
+    contentTemplateName: iosModule/Coordinator.swift
+  - pathTemplate: 'Storyboard/{{moduleName}}.storyboard'
+    contentTemplateName: iosModule/Storyboard.storyboard
+  - pathTemplate: 'Controller/{{moduleName}}ViewController.swift'
+    contentTemplateName: iosModule/Controller.swift
+  - pathTemplate: 'Controller/{{moduleName}}ViewController.xib'
+    contentTemplateName: iosModule/Controller.xib

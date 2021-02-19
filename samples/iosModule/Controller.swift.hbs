@@ -1,0 +1,26 @@
+import MultiPlatformLibrary
+import UIKit
+
+class {{moduleName}}ViewController: MVVMController<{{moduleName}}ViewModel> {
+
+    // MARK: - IBOutlets
+
+
+    // MARK: - Lifecycle
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setup()
+    }
+
+    private func setup() {
+        
+    }
+
+    override func bindViewModel(_ viewModel: {{moduleName}}ViewModel) {
+        super.bindViewModel(viewModel)
+    }
+
+    // MARK: - Action
+    
+}

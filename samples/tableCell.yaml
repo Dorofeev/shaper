@@ -1,0 +1,9 @@
+globalParams:
+  cellName: NewsButton
+  iosProjectModule: mokoApp
+
+files:
+  - pathTemplate: '{{cellName}}/{{cellName}}TableViewCell.swift'
+    contentTemplateName: tableCell/Cell.swift
+  - pathTemplate: '{{cellName}}/{{cellName}}TableViewCell.xib'
+    contentTemplateName: tableCell/Cell.xib
