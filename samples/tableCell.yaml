@@ -1,5 +1,5 @@
 globalParams:
-  cellName: NewsButton
+  cellName: NewsCardContainer
   iosProjectModule: mokoApp
 
 files:

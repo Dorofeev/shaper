@@ -1,0 +1,9 @@
+globalParams:
+  cellName: NewsCard
+  iosProjectModule: mokoApp
+
+files:
+  - pathTemplate: '{{cellName}}/{{cellName}}CollectionViewCell.swift'
+    contentTemplateName: collectionCell/Cell.swift
+  - pathTemplate: '{{cellName}}/{{cellName}}CollectionViewCell.xib'
+    contentTemplateName: collectionCell/Cell.xib

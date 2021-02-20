@@ -1,0 +1,54 @@
+//
+//  {{controllerName}}ViewController.swift
+//  rosseti
+//
+//  Created by Andrey Dorofeev on 20.02.2021.
+//  Copyright © 2021 IceRock Development. All rights reserved.
+//
+
+import MultiPlatformLibrary
+import UIKit
+
+class {{controllerName}}ViewController: MVVMController<{{controllerName}}ViewModel> {
+
+    // MARK: - IBOutlets
+
+
+    // MARK: - Lifecycle
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setup()
+    }
+
+    private func setup() {
+        
+    }
+
+    override func bindViewModel(_ viewModel: {{controllerName}}ViewModel) {
+        super.bindViewModel(viewModel)
+    }
+
+    // MARK: - Action
+    
+}
+
+// Создай контроллер в сториборде с id = "{{controllerNameSmall}}Controller"
+
+/* Добаввь это в координатор
+// MARK: - {{controllerName}}
+
+extension {{moduleName}}Coordinator: {{controllerName}}ViewModelEventsListener {
+    
+    func create{{controllerName}}Controller() -> {{controllerName}}ViewController {
+        let controller = R.storyboard.{{moduleNameSmall}}.{{controllerNameSmall}}Controller()!
+        
+        let viewModel = factory.create{{controllerName}}ViewModel(
+            eventsDispatcher: EventsDispatcher(listener: self)
+        )
+        controller.bindViewModel(viewModel)
+        return controller
+    }
+}
+
+*/

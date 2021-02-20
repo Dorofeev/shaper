@@ -1,0 +1,12 @@
+globalParams:
+  moduleName: News
+  moduleNameSmall: news
+  controllerName: NewsDetails
+  controllerNameSmall: newsDetails
+  iosProjectModule: mokoApp
+
+files:
+  - pathTemplate: '{{controllerName}}Controller/{{controllerName}}ViewController.swift'
+    contentTemplateName: iosController/Controller.swift
+  - pathTemplate: '{{controllerName}}Controller/{{controllerName}}ViewController.xib'
+    contentTemplateName: iosController/Controller.xib
